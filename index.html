@@ -1,19 +1,56 @@
-<form action="https://formspree.io/f/xrejbpzv" method="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AVEMCO Quote</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-  <input type="hidden" name="_subject" value="New AVEMCO Quote Request">
-  <input type="text" name="_gotcha" style="display:none">
+<div class="form-wrapper">
+  <div class="form-card">
+    <h2>Get an Aircraft Insurance Quote</h2>
+    <p class="sub">Takes less than 60 seconds</p>
 
-  <input type="text" name="First Name" placeholder="First Name" required>
-  <input type="text" name="Last Name" placeholder="Last Name" required>
-  <input type="tel" name="Phone Number" placeholder="Phone Number" required>
-  <input type="email" name="Email Address" placeholder="Email Address" required>
+    <form action="https://formspree.io/f/xrejbpzv" method="POST">
 
-  <input type="text" name="Base Airport" placeholder="Base Airport (Identifier)">
-  <input type="number" name="Aircraft Year" placeholder="Aircraft Year">
-  <input type="text" name="Aircraft Make" placeholder="Aircraft Make">
-  <input type="text" name="Aircraft Model" placeholder="Aircraft Model">
-  <input type="number" name="Value Requested" placeholder="Value Requested">
+      <input type="hidden" name="_subject" value="New AVEMCO Quote Request">
+      <input type="text" name="_gotcha" class="hidden">
 
-  <button type="submit">Get Quote</button>
+      <!-- Name -->
+      <div class="row">
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" placeholder="Last Name" required>
+      </div>
 
-</form>
+      <!-- Contact -->
+      <div class="row">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <!-- Aircraft -->
+      <div class="row">
+        <input type="text" name="base_airport" placeholder="Base Airport (Identifier)">
+        <input type="number" name="aircraft_year" placeholder="Aircraft Year">
+      </div>
+
+      <div class="row">
+        <input type="text" name="aircraft_make" placeholder="Aircraft Make">
+        <input type="text" name="aircraft_model" placeholder="Aircraft Model">
+      </div>
+
+      <!-- Value -->
+      <div class="row">
+        <input type="number" name="value_requested" placeholder="Value Requested">
+      </div>
+
+      <button type="submit">Get My Quote</button>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

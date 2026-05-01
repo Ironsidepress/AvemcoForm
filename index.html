@@ -1,28 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Aircraft Insurance Quote</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<form action="https://formspree.io/f/xrejbpzv" method="POST">
 
-<div class="form-wrap">
-  <h2>Get an Insurance Quote from AVEMCO</h2>
+  <input type="hidden" name="_subject" value="New AVEMCO Quote Request">
+  <input type="text" name="_gotcha" style="display:none">
 
-  <form id="quoteForm">
-    <input type="text" placeholder="First Name" required>
-    <input type="text" placeholder="Last Name" required>
-    <input type="tel" placeholder="Phone Number" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="text" placeholder="Base Airport (Identifier)">
-    <input type="number" placeholder="Aircraft Year">
-    <input type="text" placeholder="Aircraft Make">
-    <input type="text" placeholder="Aircraft Model">
-    <input type="number" placeholder="Value Requested">
+  <input type="text" name="First Name" placeholder="First Name" required>
+  <input type="text" name="Last Name" placeholder="Last Name" required>
+  <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+  <input type="email" name="Email Address" placeholder="Email Address" required>
 
-    <button type="submit">Get Quote</button>
-  </form>
-</div>
+  <input type="text" name="Base Airport" placeholder="Base Airport (Identifier)">
+  <input type="number" name="Aircraft Year" placeholder="Aircraft Year">
+  <input type="text" name="Aircraft Make" placeholder="Aircraft Make">
+  <input type="text" name="Aircraft Model" placeholder="Aircraft Model">
+  <input type="number" name="Value Requested" placeholder="Value Requested">
 
-</body>
-</html>
+  <button type="submit">Get Quote</button>
+
+</form>
